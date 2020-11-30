@@ -7,42 +7,48 @@
 <body>
  <div>
      <ul> 
-        <li><a href="https://xiaohu-ai.github.io/xiaohu/"> 主页</a></li>
+        <li><a class="active" href="https://xiaohu-ai.github.io/xiaohu/"> 主页</a></li>
         <li> <a href="https://xiaohu-ai.github.io/xiaohu-ai/">使用手册</a></li>
         <li> <a href="">我们的社员</a></li>
         <li><a href="">新闻推送</a></li>
-     </ul>
-	 
+     </ul>	 
  </div>
 </body>
 </html>
-<style type="text/css">
+<style>
 *{
     margin: 0;
     padding: 0;
  }
-div{
+div {
     width: 100%;
     height: 60px;
     background-color: #f3de1f;
     position: relative;
 }
-a:hover{
+li a:hover{
     color: rgb(243, 222, 31);
     background-color: rgb(255, 255, 255);
-    border-radius: 5px
+    border-radius: 5px;
+    
 }
-a {
+li a {
     text-decoration:none;
     color: rgb(255,255,255);
     font-family: Helvetica;
     text-align:center;
     float: left;
     margin-left:60px;
-    margin-top: 12px;
+    margin-top: 10px;
     font-size: 20px;
-    padding: 5px;
+    padding: 8px;
+    font-weight:bold;
     
+}
+li a.active {
+    background-color: rgb(255,255,255);
+    color: rgb(243,222,31);
+    border-radius: 5px;
 }
 ul {
   list-style-type: none;
